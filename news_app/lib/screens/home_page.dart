@@ -3,9 +3,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:news_app/models/article_model.dart';
-import 'package:news_app/services/categories_data.dart';
-import 'package:news_app/services/news_data.dart';
+import '../models/article_model.dart';
+import '../services/categories_data.dart';
+import '../services/news_data.dart';
 import '../models/category_model.dart';
 import '../widgets/blog_tile.dart';
 import '../widgets/category_tile.dart';

@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:news_app/screens/home_page.dart';
+import '../screens/home_page.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
