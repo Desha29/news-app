@@ -7,6 +7,7 @@ List<CategoryModel> getCategories() {
     CategoryModel(categoryName: "General", image: "assets/images/general.jpg"),
     CategoryModel(categoryName: "Health", image: "assets/images/Health.jpg"),
     CategoryModel(categoryName: "Sports", image: "assets/images/sports.jpg"),
+    CategoryModel(categoryName: "Technology", image: "assets/images/tec.jpeg"),
   ];
 
   return category;
