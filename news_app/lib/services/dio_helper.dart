@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:news_app/models/article_model.dart';
 
 class DioHelper {
   Dio dio = Dio();
@@ -27,15 +26,4 @@ class DioHelper {
   }
 }
 
-class NewsData {
-  static List<ArticleModel> newsEverything = [];
-  static List<ArticleModel> newsTopHeadlines = [];
 
-  Future<void> getData() async {
-    Map<String, dynamic> everythingList = await DioHelper().getNewsEverything();
-    Map<String, dynamic> topHeadlinesList = await DioHelper().getNewsTopHeadlines();
-
-    newsEverything = ArticleModel.convertToArticle(everythingList);
-    newsTopHeadlines = ArticleModel.convertToArticle(topHeadlinesList);
-  }
-}

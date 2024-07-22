@@ -1,6 +1,7 @@
-
 import 'package:flutter/material.dart';
-import '../screens/home_page.dart';
+import 'package:news_app/constants/components.dart';
+import '../widgets/home_body.dart';
+import 'home_screen.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -46,9 +47,8 @@ class _LandingPageState extends State<LandingPage> {
             const SizedBox(height: 40),
             InkWell(
               onTap: () {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                navigateToReplacement(context, HomeScreen());
               },
-         
               child: SizedBox(
                   width: MediaQuery.of(context).size.width / 1.2,
                   child: Material(
